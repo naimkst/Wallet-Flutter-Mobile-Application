@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:walletapp/pages/home_page.dart';
+import 'package:walletapp/pages/start_screen.dart';
 
 
 void main() {
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: StartPage(),
     );
   }
 }
