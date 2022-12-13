@@ -36,7 +36,9 @@ class _StartPageState extends State<StartPage> {
                       fontWeight: FontWeight.w500
                   ),),
                   Row(
+                    children: [
 
+                    ],
                   ),
                 ],
               ),
