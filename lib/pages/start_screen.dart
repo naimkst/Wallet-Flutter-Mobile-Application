@@ -35,9 +35,59 @@ class _StartPageState extends State<StartPage> {
                       fontSize: 28,
                       fontWeight: FontWeight.w500
                   ),),
-                  Row(
-                    children: [
-                    ],
+                  Container(
+                    margin: EdgeInsets.only(top:50 ),
+                    padding: EdgeInsets.only(right: 30),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        SizedBox(
+                          width: 150,
+                          height: 45,
+                          child: ElevatedButton(onPressed: (){
+                            print("Clicked");
+                          },
+                              child: Text('Sign In', style: TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.w500,
+                                color: Color(0xFF6F6F94),
+                              ),),
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: Color(0xFFEDEDF3),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(16)
+                              ),
+                              elevation: 0.0,
+                            ),
+
+
+                          ),
+                        ),
+
+                        SizedBox(
+                          width: 150,
+                          height: 45,
+                          child: ElevatedButton(onPressed: (){
+                            print("Clicked");
+                          },
+                            child: Text('Get Started', style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.w500,
+                              color: Colors.white,
+                            ),),
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: Color(0xFF5F59E1),
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(16)
+                              ),
+                              elevation: 0.0,
+                            ),
+
+
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ],
               ),
